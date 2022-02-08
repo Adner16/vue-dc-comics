@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Header from  './header.vue/'
+import Header from  './components/Header'
 
 export default {
   name: 'App',
@@ -16,5 +16,10 @@ export default {
 </script>
 
 <style lang="scss">
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
 </style>
