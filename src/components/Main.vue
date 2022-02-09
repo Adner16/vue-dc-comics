@@ -1,6 +1,9 @@
 <template>
-  <div class="container">
-
+  <div class="background">
+      <div class="container">
+          <p>content goes here</p>
+      </div>
+      
   </div>
 </template>
 
@@ -10,8 +13,22 @@ export default {
 }
 </script>
 
-<style lang='scss'>
-    .container{
-        background-color: black;
+<style scoped lang='scss'>
+
+    .background {
+                background-color: #1c1c1c;
+                height: 100px;
+                display: flex;
+                align-items: center;
+        .container{
+            width: 1200px;
+            margin: auto;
+            color: white;
+            
+            p {
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
     }
 </style>

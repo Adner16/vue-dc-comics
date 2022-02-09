@@ -2,18 +2,27 @@
   <div id="app">
    <Header />
    <Main />
+   <Nav />
+   <Footer />
+   <Social />
   </div>
 </template>
 
 <script>
 import Header from  './components/Header'
 import Main from './components/Main'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
+import Social from './components/Social'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Main
+    Main,
+    Nav,
+    Footer,
+    Social,
   }
 }
 </script>
@@ -25,4 +34,8 @@ export default {
     box-sizing: border-box;
   }
 
+  img{
+    width: 100%;
+    height: auto;
+  }
 </style>

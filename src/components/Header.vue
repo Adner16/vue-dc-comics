@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style lang='scss'>
+<style scoped lang="scss">
     header .container{
         width: 1200px;
         margin: auto;
