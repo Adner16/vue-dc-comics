@@ -2,7 +2,8 @@
     <div class="background">
         <div class="container">
             <div class="col-50-left">
-                <ul>
+                <div>
+                    <ul>
                     <li>
                         <h3>DC COMICS</h3>
                     </li>
@@ -21,7 +22,9 @@
                     <li>Shop DC</li>
                     <li>Shop DC Collectibles</li>
                 </ul>
-                <ul>
+                </div>
+                <div>
+                    <ul>
                     <li>
                         <h3>DC</h3>
                     </li>
@@ -37,7 +40,9 @@
                     <li>Shop Help</li>
                     <li>Contact us</li>
                 </ul>
-                <ul>
+                </div>
+                <div>
+                    <ul>
                     <li>
                         <h3>SITES</h3>
                     </li>
@@ -47,6 +52,8 @@
                     <li>DC Universe</li>
                     <li>DC Power Visa</li>
                 </ul>
+                </div>
+                
             </div>
             <div class="col-50-right">
 
@@ -72,17 +79,17 @@ export default {
         background-position: center;
     };
     .container{
-        height: 400px;
+        height: 350px;
         width: 1200px;
         margin: auto;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
         .col-50-left{
         width: 50%;
         padding: 30px 0;
+        display: flex;
             ul {
             list-style-type: none;
+            margin-right: 20px;
                 li{
                     color: grey;
                     font-size: 15px;
@@ -94,7 +101,7 @@ export default {
             }
         }
         .col-50-right{
-            width: 100%;
+            width: 50%;
             height: 100%;
             background-image: url('../assets/img/dc-logo-bg.png');
             background-position: center;
