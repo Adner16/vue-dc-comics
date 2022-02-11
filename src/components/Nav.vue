@@ -1,8 +1,8 @@
 <template>
     <div class="background">
         <div class="container">
-            <ul v-for="card in cards" :key="card.text" class="card-img">
-                <li>
+            <ul>
+                <li v-for="card in cards" :key="card.text" class="card-img">
                     <figure>
                         <img 
                             :src="require(`../assets/img/${card.url}`)" 
@@ -11,28 +11,6 @@
                     </figure>
                     <span class="text">{{ card.text }}</span>
                 </li>
-                <!-- <li> -->
-                    <!-- <figure>
-                        <img src="../assets/img/buy-comics-merchandise.png" alt="icon">
-                    </figure>
-                    <span>DC MERCHANDISE</span></li>
-                <li>
-                    <figure>
-                        <img src="../assets/img/buy-comics-subscriptions.png" alt="logo">
-                    </figure>
-                    <span>SUBSCRIPTION</span></li>
-                <li>
-                    <figure id="locator">
-                        <img src="../assets/img/buy-comics-shop-locator.png" alt="logo">
-                    </figure>
-                    <span>COMIC SHOP LOCATOR</span>
-                </li>
-                <li>
-                    <figure>
-                        <img src="../assets/img/buy-dc-power-visa.svg" alt="logo">
-                    </figure>
-                    <span>DC POWER VISA</span>
-                </li> -->
             </ul>
         </div>
     </div>  
@@ -51,12 +29,12 @@ export default {
                 },
                 {
                     text: 'DC MERCHANDISE',
-                    url: 'buy-comics-merchandise.png,',
+                    url: 'buy-comics-merchandise.png',
                     description: 'logo merchandise',
                 },
                 {
                     text: 'SUBSCRIPTION',
-                    url: 'buy-comics-subscription.png',
+                    url: 'buy-comics-subscriptions.png',
                     description: 'logo subscription',
                 },
                 {
@@ -66,7 +44,7 @@ export default {
                 },
                 {
                     text: 'DC POWER VISA',
-                    url: 'buy-dc-power-visa',
+                    url: 'buy-dc-power-visa.svg',
                     description: 'logo visa',
                 },
             ],
@@ -97,12 +75,8 @@ export default {
                     color: white;
                     font-size: 15px;
 
-                    #locator{
-                        width: 30px;
-                    }
-
                     figure{
-                        width: 40px;
+                        width: 35px;
                         margin: 0 20px;
                     }
                 }

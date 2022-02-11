@@ -1,6 +1,7 @@
 <template>
   <div id="app">
    <Header />
+   <Jumbo />
    <Main />
    <Nav />
    <Footer />
@@ -14,6 +15,7 @@ import Main from './components/Main'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import Social from './components/Social'
+import Jumbo from './components/Jumbo'
 
 export default {
   name: 'App',
@@ -23,6 +25,7 @@ export default {
     Nav,
     Footer,
     Social,
+    Jumbo,
   }
 }
 </script>
