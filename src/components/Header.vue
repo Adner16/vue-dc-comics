@@ -1,9 +1,9 @@
 <template>
   <header>
       <div class="container">
-           <figure>
-          <img src="../assets/img/dc-logo.png" alt="">
-      </figure>
+        <figure>
+            <img src="../assets/img/dc-logo.png" alt="">
+        </figure>
       <ul>
           <li>
               <a href="#">CHARACTERS</a>
@@ -12,9 +12,11 @@
               <a href="#">COMICS</a>
           </li><li>
               <a href="#">MOVIES</a>
-          </li><li>
+          </li>
+          <li>
               <a href="#">TV</a>
-          </li><li>
+          </li>
+          <li>
               <a href="#">GAMES</a>
           </li><li>
               <a href="#">COLLECTIBLES</a>
@@ -45,8 +47,10 @@ export default {
         margin: auto;
         display: flex;
         justify-content: space-between;
-        padding: 10px;
 
+    figure{
+        padding: 10px;
+    }
         ul{
             display: flex;
             align-items: center;
@@ -54,11 +58,22 @@ export default {
             li{
                 margin: 5px;
                 list-style-type: none;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                
                 a{
                     color: black;
                     text-decoration: none;
                 }
             }
         }
+    li:hover {
+        color: dodgerblue;
+        border-bottom:5px solid dodgerblue ;
+        a:hover{
+        color: dodgerblue;
+        }
     }
+}
 </style>

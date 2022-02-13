@@ -2,11 +2,10 @@
   <div class="background">
       <div class="container">
         <div v-for="(comic, index) in comics" class='comic' :key='index'>
-            <div>{{comic.price}}</div>
-            <div>{{comic.type}}</div>
             <figure>
-                <img :src="comic.thumb" alt="">
+                <img :src="comic.thumb" alt="logo">
             </figure>
+            <div class="title">{{comic.series}}</div>
         </div>
       </div>
       
@@ -102,7 +101,6 @@ export default {
 
     .background {
                 background-color: #1c1c1c;
-                height: 100px;
                 display: flex;
                 align-items: center;
         .container{
@@ -110,11 +108,24 @@ export default {
             margin: auto;
             color: white;
             display: flex;
+            flex-wrap: wrap;
+            padding: 50px 0;
             
-            p {
-                font-weight: 600;
-                font-size: 20px;
-            }
+                .comic{
+                    margin: 20px 20px;
+                    width: 150px;
+                    
+                    figure{
+                        width: 150px;
+                        height: 150px;
+                        overflow: hidden;
+                        
+                    }
+                    .title{
+                            margin-top: 10px;
+                        }
+                }
+            
         }
     }
 </style>
